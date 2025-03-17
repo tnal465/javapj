@@ -1,0 +1,12 @@
+package order.repository;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
+import order.model.Order;
+
+public interface OrderDao {
+	public List<Order> getOrderList();
+}
