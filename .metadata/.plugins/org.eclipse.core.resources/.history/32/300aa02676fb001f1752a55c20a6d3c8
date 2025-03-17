@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+        function goToEditPage() {
+            window.location.href = "/user/edit"; // 회원 수정 페이지 URL
+        }
+    </script>
+</head>
+<body>
+<h2>회원 정보 페이지</h2>
+<p>ㅇㅇㅇ님</p>
+<button onclick="goToEditPage()">
+    <i>⚙</i> 회원 수정
+</button>
+</body>
+</html>

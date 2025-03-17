@@ -1,0 +1,14 @@
+package user.model;
+
+import java.util.List;
+
+import order.model.Order;
+
+public class User {
+	int id;
+    String username;
+    String password;
+    String nickname;
+    String email;
+
+}

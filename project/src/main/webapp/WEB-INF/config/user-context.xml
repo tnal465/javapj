@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- OrderDao 빈 정의 (MapperFactoryBean 사용) -->
+    <bean id="orderDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="project.repository.OrderDao"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+    <!-- UserService 빈 정의 (orderDao 주입) -->
+    <bean id="userService" class="project.service.UserService">
+        <property name="orderDao" ref="orderDao"/>
+    </bean>
+
+    <!-- UserController 빈 정의 (userService 주입) -->
+    <bean id="userController" class="project.controller.UserController">
+        <property name="service" ref="userService"/>
+    </bean>
+    
+</beans>

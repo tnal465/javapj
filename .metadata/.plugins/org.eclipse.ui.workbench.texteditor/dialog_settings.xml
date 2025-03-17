@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="app-"/>
+			<item value="app"/>
+			<item value="listener"/>
+			<item value="sqlSessionFactory"/>
+			<item value="glassfish"/>
+			<item value="jstl"/>
+			<item value="res"/>
+			<item value="resour"/>
+			<item value="th"/>
+			<item value="time"/>
+			<item value="login"/>
+			<item value="rest"/>
+			<item value="api"/>
+			<item value="dis"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="&quot;org.mybatis.spring.mapper.MapperFactoryBean&quot;"/>
+			<item value="org.mybatis.spring.mapper.MapperFactoryBean"/>
+			<item value="springSecurityFilterChain"/>
+			<item value="contextConfigLocation"/>
+			<item value="spring"/>
+			<item value="org.springframework"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1137"/>
+		<item key="DIALOG_Y_ORIGIN" value="241"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

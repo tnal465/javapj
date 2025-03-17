@@ -1,0 +1,11 @@
+package order.repository;
+
+@Repository
+public class OrderDaoImpl implements OrderDao {
+    // 주문 조회 등의 메서드 구현
+    @Override
+    public List<Order> findAllOrders() {
+        // 데이터베이스에서 주문 목록을 가져오는 로직 구현
+        return new ArrayList<>();
+    }
+}

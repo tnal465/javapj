@@ -1,0 +1,9 @@
+package order.repository;
+
+import java.util.List;
+
+import order.model.Order;
+
+public interface OrderDao {
+	List<Order> getOrderList();
+}

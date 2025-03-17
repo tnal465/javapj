@@ -1,0 +1,33 @@
+package user.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+	/*
+    @PostMapping("/save")
+    public String saveProfile(@RequestParam String nickname) {
+        System.out.println("저장된 닉네임: " + nickname);
+        return "redirect:/user/success";
+    }
+
+    @GetMapping("/success")
+    public String successPage() {
+        return "success"; 
+    }
+    */
+	 @Autowired
+	    private UserService userService;
+
+	    @GetMapping("/user/info")
+	    public String userInfo(Model model) {
+	        List<Order> orders = userService.getOrderList(); // 주문 목록 가져오기
+	        model.addAttribute("orders", orders); // 주문 목록을 모델에 추가
+	        return "userInfo"; // 회원 정보 페이지로 이동
+	    }
+}

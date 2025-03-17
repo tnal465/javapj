@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!-- MyBatis 전역 설정들 -->
+    <settings>
+        <!-- 예시: 로그 출력 설정 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    
+    <!-- 매퍼 위치 정의 -->
+    <mappers>
+        <mapper resource="order/repository/OrderDao.xml"/>
+    </mappers>
+</configuration>

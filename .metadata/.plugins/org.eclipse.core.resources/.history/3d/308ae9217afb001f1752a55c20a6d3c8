@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+        function editPage() {
+            window.location.href = "/user/edit"; // 회원 수정 페이지 URL
+        }
+    </script>
+     <script>
+        function toggleOrderList() {
+            var orderList = document.getElementById('orderList');
+            if (orderList.style.display === "none") {
+                orderList.style.display = "block"; 
+            } else {
+                orderList.style.display = "none"; 
+            }
+        }
+    </script>
+</head>
+<body>
+<h2>회원 정보 페이지</h2>
+<p>ㅇㅇㅇ님</p>
+<button onclick="editPage()">
+    <i>⚙</i> 회원 수정
+</button>
+<h3>주문내역</h3>
+<button onclick="viewOrderList()">주문 목록 보기</button>
+<div id="orderList">
+    <h3>주문 목록</h3>
+    <ul>
+        <li>주문 1 - 2025-03-01</li>
+        <li>주문 2 - 2025-03-02</li>
+        <li>주문 3 - 2025-03-03</li>
+    </ul>
+</div>
+
+</body>
+</html>

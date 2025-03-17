@@ -1,0 +1,19 @@
+package home.controller;
+
+
+
+
+@Controller
+public class HomeController {
+	
+	@Autowired
+    UserService service;
+
+    @GetMapping
+    public String getUserOrders(Model model) {
+        List<Order> orders = service.findAll(); 
+        model.addAttribute("orders", orders);
+        return "user";
+    }
+	
+}

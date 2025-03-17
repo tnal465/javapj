@@ -1,0 +1,18 @@
+package order.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import order.model.Order;
+
+@Repository
+public class OrderDaoImpl implements OrderDao {
+
+    @Override
+    public List<Order> getOrderList() {
+        // 데이터베이스에서 주문 목록을 가져오는 로직 구현
+        return new ArrayList<>();
+    }
+}

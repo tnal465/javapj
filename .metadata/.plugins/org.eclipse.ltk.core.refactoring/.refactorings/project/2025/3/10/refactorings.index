@@ -1,0 +1,33 @@
+1741324305149	Rename package 'project.survice'
+1741326720997	Move 'user.jsp' to 'views'
+1741327862255	Delete elements
+1741328792053	Delete element
+1741328800433	Delete elements
+1741328806114	Delete element
+1741328816060	Delete elements
+1741333461666	Rename type 'Project'
+1741334019973	Delete element
+1741334357928	Delete element
+1741334573044	Rename type 'Controller'
+1741334583143	Rename type 'Service'
+1741334696297	Rename type 'Dao'
+1741334967494	Rename resource 'UserDao.xml'
+1741334978137	Rename type 'UserDao'
+1741336677052	Delete elements
+1741336678405	Move 'config' to 'WEB-INF'
+1741336918245	Delete element
+1741336946103	Delete element
+1741349495194	Copy file
+1741350172299	Copy files
+1741352559700	Delete element
+1741355589148	Delete element
+1741357571785	Delete element
+1741359124182	Move 'config' to 'resources'
+1741359328165	Move 'config' to 'WEB-INF'
+1741361555612	Copy file
+1741361558981	Delete element
+1741363291655	Delete element
+1741366483299	Move 'OrderDao.xml' to 'webapp'
+1741366489353	Move 'OrderDao.xml' to 'resources'
+1741366502199	Move 'OrderDao.xml' to 'mappers'
+1741366563103	Move 'mybatis-config.xml' to 'config'

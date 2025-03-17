@@ -1,0 +1,26 @@
+package user.model;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+import order.model.Order;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
+public class User {
+	int id;
+    String username;
+    String password;
+    String nickname;
+    String email;
+
+}
