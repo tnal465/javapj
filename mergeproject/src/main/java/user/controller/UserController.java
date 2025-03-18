@@ -1,47 +1,38 @@
 package user.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import order.model.Order;
+import user.model.User;
 import user.service.UserService;
-@RequestMapping("/user")
+
 @Controller
+@RequestMapping("/user")
 public class UserController {
-	
-	
+
 	@Autowired
-	private UserService userService;
+	UserService userService; 
 
-	@RequestMapping("")
-	public String userInfo(Model model) { 
-	    List<Order> orders = userService.getOrderList();
-	    model.addAttribute("orders", orders); 
-	    return "user"; 
-	}
-
-	
-	
-	/*
-	@RequestMapping("user")
-	public String user() {
-		return "user";
-	}
-	
-	
-    @PostMapping("/save")
-    public String saveProfile(@RequestParam String nickname) {
-        System.out.println("���옣�맂 �땳�꽕�엫: " + nickname);
-        return "redirect:/user/success";
+    @GetMapping("/mypage")
+    public String mypage(Model model) {
+    	User user = userService.findNicknameById("user1");
+        if (user == null) {
+            System.out.println(">>>>>>>>>>>>>>>>>>User not found");
+        } else {
+            System.out.println(">>>>>>>>>>>>>>User found: " + user.getNickname());
+        }
+        model.addAttribute("user", user);
+        return "mypage";
     }
-
-    @GetMapping("/success")
-    public String successPage() {
-        return "success"; 
+    
+    @GetMapping("/edit")
+    public String editUser() {
+        return "/user/userEditForm";  
     }
-    */
+    
+    
+   
 }

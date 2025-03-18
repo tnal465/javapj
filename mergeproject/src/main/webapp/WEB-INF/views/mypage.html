@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html xmlns:th="http//www.thymeleaf.org"
-xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
-layout:decorate="~{layout/layout}">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
-
-<style>
-body {
-background-color: #4e505e;
-}
-</style>
-
 </head>
 
 <body>
-<th:block layout:fragment="content">
+<h2>회원 정보 페이지</h2>
+<p th:text="${user != null ? user.nickname + '님' : 'User not found'}"></p>
+<a th:href="@{/user/edit}"><button>⚙</button></a>
+<h3>주문내역</h3>
+<a th:href="@{/order/orderlist}"><button>주문 목록 보기</button></a>
+<div id="orderList">
 
-        <h1>MYPAGE</h1>
-        
-        
-</th:block>
+    <!--
+    <h3>주문 목록</h3> 
+    <ul>
+        <th:block th:each="order : ${orders}">
+            <li>
+                <span th:text="${order.itemName}"></span> -
+                <span th:text="${order.orderDate}"></span> -
+                <span th:text="${order.totalPrice}"></span>
+            </li>
+        </th:block>
+    </ul>
+    -->
+</div>
 </body>
 
 </html>

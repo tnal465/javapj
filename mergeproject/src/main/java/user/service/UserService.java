@@ -1,22 +1,18 @@
 package user.service;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import order.model.Order;
-import order.repository.OrderDao;
+import user.model.User;
+import user.repository.UserMapper;
 
 @Service
 public class UserService {
 
-    @Autowired
-    private OrderDao orderDao;
-
-    
-    public List<Order> getOrderList() {
-        return orderDao.getOrderList(); 
-    }
-    
+	@Autowired
+	UserMapper userMapper;
+	
+	public User findNicknameById(String id) {
+		return userMapper.findNicknameById(id);
+	}
 }

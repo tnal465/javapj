@@ -1,21 +1,22 @@
 package user.model;
 
+import groovy.transform.ToString;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 @ToString
 public class User {
-	int id;
-    String username;
-    String password;
-    String nickname;
-    String email;
-
+	 String id;
+     String password;
+     String name;
+     String nickname;
+     int age;
+     String gender;
+     String address;
 }
