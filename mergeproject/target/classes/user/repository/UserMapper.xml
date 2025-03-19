@@ -8,9 +8,10 @@
 		WHERE id = #{id}
 	</select>
 	
-	<select id="findNicknameById" resultType="user.model.User">
-		SELECT id, password, name, nickname, age, gender, address
-		FROM users
-		WHERE id = #{id}
-	</select>
+    
+    <update id="updateUser" parameterType="user.model.User">
+        UPDATE users
+        SET password = #{password}, nickname = #{nickname}, address = #{address}
+        WHERE id = #{id}
+    </update>
 </mapper>
